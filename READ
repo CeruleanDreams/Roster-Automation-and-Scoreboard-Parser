@@ -1,0 +1,21 @@
+INSTRUCTIONS:
+
+1) Install Python 3.8, CMake and Tesseract 5. Instructions and installation can be found here:
+    https://www.python.org/downloads/release/python-380/
+    https://linuxhint.com/install-tesseract-windows/
+    https://cmake.org/download/
+
+2) Set up the Google Sheets API: https://www.youtube.com/watch?v=3wC-SCdJK2c&t=334s
+   Make sure to add email to the desired spreadsheet, download the key and rename it to "service_account.json" whilst placing it within the application's root directory.
+
+3) Navigate and cd the project's root directory before running the command:
+   pip install -r requirements.txt
+
+4) Make sure to perform the necessary modifications on the config.ini file (enter your spreadsheet's title, specify the image's file type et cetera).
+
+5) Make sure the images adhere more or less to the example provided as example.png (e.g. no border, column space, no team-names, no icons).
+   Make sure the background is dark and static. Only detects yellow/red/white text.
+   Furthermore, it only accepts three columns of numbers. Place the pictures inside the "Pictures" folder inside the project directory.
+
+ 6) Run the main.exe file or main.py with the help of an IDE (Pycharm for example).
+
