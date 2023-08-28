@@ -152,9 +152,12 @@ def match_picture_to_board(player_list, worksheet_names):
                         player.potential_matches.pop(candidate_number)
             #Resorts
             list_no_matches = sorted(list_no_matches, key = lambda player: player.potential_matches[0][0] if player.potential_matches else float('inf'))
+            #Since array length decreases by 1, no need to move to next index
 
         else:
             #No match found; will be kept for creating a new entry
+            #By this point, only players with no matches remain within list_no_matches
+
             iter_index += 1
 
 
